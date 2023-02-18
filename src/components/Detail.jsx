@@ -10,7 +10,7 @@ const divPrincipal = {
   justifyContent: "space-around",
   width: "80%",
   margin: "auto",
-  marginTop: "75px",
+  marginTop: "80px",
 };
 const styleButton = {
   backgroundColor: "pink",
