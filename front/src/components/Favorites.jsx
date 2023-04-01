@@ -17,7 +17,6 @@ export function Favorites({ myFavorites }) {
   const dispatch = useDispatch();
 
   function handleReset(e) {
-    // dispatch({ type: "RESET" });
     dispatch(getFavorites());
     filter.current.value = "";
     order.current.value = "";

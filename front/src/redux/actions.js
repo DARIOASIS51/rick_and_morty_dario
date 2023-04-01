@@ -86,8 +86,10 @@ export function deleteFavorite(id) {
     try {
       const data = await fetch(`http://localhost:3001/fav/${id}`, {
         method: "DELETE",
-      }).then((response) => response.json());
-      if (data.success) dispatch({ type: DELETE_FAVORITE, payload: id });
+      }).then((response) => response.json())
+      
+        if (data.success) dispatch({ type: DELETE_FAVORITE, payload: id });
+      
     } catch (error) {
       console.log(error);
     }

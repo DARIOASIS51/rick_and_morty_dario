@@ -1,7 +1,7 @@
 // const http = require("http");
-// // const characters = require("../utils/data");
-// var {getCharById} = require('../controllers/getCharById')
-// var {getCharDetail} = require('../controllers/getCharDetail')
+// // const characters = require("./utils/data.js");
+// var {getCharById} = require('./controllers/getCharById')
+// var {getCharDetail} = require('./controllers/getCharDetail')
 
 // http
 //   .createServer((req, res) => {
@@ -40,10 +40,10 @@
 
 //***************************EXPRESS***********************/
 
-const express = require('express');
-const server = express();
+const express = require('express');  // importamos express
+const server = express(); // nos guardamos todas las funcionalidades de express en una variable
 const PORT = 3001;
-const router = require('../routes/index.js');
+const router = require('./routes/index');
 const cors= require('cors');
 
 // const corsOptions = {
